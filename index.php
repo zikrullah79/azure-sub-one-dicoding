@@ -16,7 +16,7 @@
  </style>
  </head>
  <body>
- <h1>Register here please!</h1>
+ <h1>Register here !</h1>
  <p>Fill in your name and email address, then click <strong>Submit</strong> to register.</p>
  <form method="post" action="index.php" enctype="multipart/form-data" >
        Name  <input type="text" name="name" id="name"/></br></br>
@@ -26,10 +26,10 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "sub1-zikdb";
+    $host = "sub1-zik-database";
     $user = "zikrullah79";
     $pass = "Ryufar79";
-    $db = "sub1-zik-database";
+    $db = "sub1-zikdb";
 
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
