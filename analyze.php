@@ -7,12 +7,7 @@
 <body>
  
 <h1>Analyze image:</h1>
-Enter the URL to an image, then click the <strong>Analyze image</strong> button.
-<br><br>
-Image to analyze:
-<input type="hidden" name="inputImage" id="inputImage"
-    value="<?php echo $_POST["img"]?>" />
-<br><br>
+
 <div id="wrapper" style="width:1020px; display:table;">
     <div id="jsonOutput" style="width:600px; display:table-cell;">
         Response:
@@ -40,7 +35,7 @@ if(isset($_POST["img"])){
             "details": "",
             "language": "en",
         };
-        var sourceImageUrl = "<?php echo $img ?>";
+        var sourceImageUrl =  $img ;
         document.querySelector("#sourceImage").src = sourceImageUrl;
  
         $.ajax({
