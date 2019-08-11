@@ -35,7 +35,7 @@ if(isset($_POST["img"])){
             "details": "",
             "language": "en",
         };
-        var sourceImageUrl = "<?php echo $img  ?>";
+        var sourceImageUrl = "https://subzikstorage.blob.core.windows.net/sub1pict/41756.jpg";
         document.querySelector("#sourceImage").src = sourceImageUrl;
  
         $.ajax({
