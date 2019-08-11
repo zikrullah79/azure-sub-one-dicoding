@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<script>
+    alert(<?php echo isset($_POST["img"]) ?>)
+</script>
 <?php 
 if(isset($_POST["img"])){
     ?>
