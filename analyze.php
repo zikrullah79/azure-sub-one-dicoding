@@ -35,7 +35,7 @@ if(isset($_POST["img"])){
             "details": "",
             "language": "en",
         };
-        var sourceImageUrl = "https://subzikstorage.blob.core.windows.net/sub1pict/51oig+oxn+l._sy355_.jpg";
+        var sourceImageUrl = "<?php echo $img ?>";
         document.querySelector("#sourceImage").src = sourceImageUrl;
  
         $.ajax({
