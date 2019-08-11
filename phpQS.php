@@ -72,7 +72,7 @@ if (!isset($_GET["Cleanup"])) {
     $createContainerOptions->addMetaData("key1", "value1");
     $createContainerOptions->addMetaData("key2", "value2");
 
-      $containerName = "blockblobs".generateRandomString();
+      $containerName = "blobs".generateRandomString();
 
     try {
         // Create container.
