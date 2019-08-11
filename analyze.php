@@ -36,18 +36,9 @@ if(isset($_POST["img"])){
             "language": "en",
         };
         var sourceImageUrl = "https://subzikstorage.blob.core.windows.net/sub1pict/41756.jpg";
-        fetch(sourceImageUrl)
-            .then(res => res.blob()) // Gets the response and returns it as a blob
-            .then(blob => {
-                // Here's where you get access to the blob
-                // And you can use it for whatever you want
-                // Like calling ref().put(blob)
-
-                // Here, I use it to make an image appear on the page
-                let objectURL = URL.createObjectURL(blob);
-                document.querySelector("#sourceImage").src = objectURL;
-
-                $.ajax({
+        // document.querySelector("#sourceImage").src = sourceImageUrl;
+ 
+        $.ajax({
             url: uriBase + "?" + $.param(params),
  
             // Request headers.
@@ -76,9 +67,6 @@ if(isset($_POST["img"])){
                 jQuery.parseJSON(jqXHR.responseText).message;
             alert(errorString);
         });
-        });
- 
-        
     </script>
     <?php
 }
