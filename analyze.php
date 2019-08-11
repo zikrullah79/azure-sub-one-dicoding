@@ -24,7 +24,7 @@
         // If you use a free trial subscription key, you shouldn't need to change
         // this region.
         var uriBase =
-            "https://sub1computervision.cognitiveservices.azure.com/";
+            "https://sub1computervision.cognitiveservices.azure.com/vision/v2.0/analyze";
  
         // Request parameters.
         var params = {
