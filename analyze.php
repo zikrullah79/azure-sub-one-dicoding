@@ -35,7 +35,7 @@ if(isset($_POST["img"])){
             "details": "",
             "language": "en",
         };
-        var sourceImageUrl = "<?php echo $img; ?>";
+        var sourceImageUrl = <?php echo json_encode($img); ?>;
         document.querySelector("#sourceImage").src = sourceImageUrl;
  
         $.ajax({
