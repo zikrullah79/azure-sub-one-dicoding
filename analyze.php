@@ -26,7 +26,6 @@ if(isset($_POST["img"])){
     $img  = $_POST["img"];
     ?>
     <script type="text/javascript">
-    alert('<?php echo $img; ?>')
         var subscriptionKey = "0c67ef2ccfa046f09be290c83d89c6f7";
         var uriBase =
             "https://sub1computervision.cognitiveservices.azure.com/vision/v2.0/analyze";
