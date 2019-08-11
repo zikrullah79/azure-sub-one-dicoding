@@ -16,7 +16,7 @@
 *----------------------------------------------------------------------------------
 **/
 
-/** -------------------------------------------------------------
+/* -------------------------------------------------------------
 # Azure Storage Blob Sample - Demonstrate how to use the Blob Storage service. 
 # Blob storage stores unstructured data such as text, binary data, documents or media files. 
 # Blobs can be accessed from anywhere in the world via HTTP or HTTPS. 
@@ -30,7 +30,7 @@
 #  - Blob Service PHP API - https://github.com/Azure/azure-storage-php
 #  - Storage Emulator - http://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/ 
 #
-**/
+*/
 
 require_once 'vendor/autoload.php';
 require_once "./random_string.php";
