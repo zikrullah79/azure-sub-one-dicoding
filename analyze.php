@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php 
+if(isset($_POST["img"])){
+    ?>
+    <script>
+    processImage();
+    </script>
+    <?php
+}
+?>
 <html>
 <head>
     <title>Analyze Sample</title>
@@ -34,7 +43,7 @@
         };
  
         // Display the image.
-        var sourceImageUrl = <?php echo $_POST['img'] ?>;//document.getElementById("inputImage").value;
+        var sourceImageUrl = <?php echo $_POST["img"] ?>;
         document.querySelector("#sourceImage").src = sourceImageUrl;
  
         // Make the REST API call.
@@ -74,9 +83,8 @@
 Enter the URL to an image, then click the <strong>Analyze image</strong> button.
 <br><br>
 Image to analyze:
-<input type="text" name="inputImage" id="inputImage"
-    value="http://upload.wikimedia.org/wikipedia/commons/3/3c/Shaki_waterfall.jpg" />
-<button onclick="processImage()">Analyze image</button>
+<input type="hidden" name="inputImage" id="inputImage"
+    value="<?php echo $_POST["img"]?>" />
 <br><br>
 <div id="wrapper" style="width:1020px; display:table;">
     <div id="jsonOutput" style="width:600px; display:table-cell;">

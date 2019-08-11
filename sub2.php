@@ -69,7 +69,7 @@ if (isset($_POST["upload"]) && isset($_FILES["browse"])) {
  <div class="container">
     <h1>Add Here !</h1>
     <p>Add Your Picture, Click <strong>upload</strong> to add.</p>
-    <form class="form-inline" method="POST" action="phpQS.php" enctype="multipart/form-data" >
+    <form class="form-inline" method="POST" action="sub2.php" enctype="multipart/form-data" >
         <div class="form-group">
             <div class="col-sm-10">
                 <input type="file" name="browse" accept="image/x-png,image/jpeg" />
