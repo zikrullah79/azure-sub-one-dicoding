@@ -39,7 +39,7 @@ if(isset($_POST["img"])){
             "details": "",
             "language": "en",
         };
-        var sourceImageUrl = "https://subzikstorage.blob.core.windows.net/sub1pict/2017-retro-neptune-poseidon-trident-tombak-ukraina-yunani-kalung-trishul-simbol-kalung-untuk-pria-sweater-aksesoris.jpg"//<?php echo "".$_POST["img"]."" ?>;
+        var sourceImageUrl = "https://subzikstorage.blob.core.windows.net/sub1pict/2017-retro-neptune-poseidon-trident-tombak-ukraina-yunani-kalung-trishul-simbol-kalung-untuk-pria-sweater-aksesoris.jpg";
         document.querySelector("#sourceImage").src = sourceImageUrl;
  
         $.ajax({
