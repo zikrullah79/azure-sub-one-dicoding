@@ -35,7 +35,7 @@ if(isset($_POST["img"])){
             "details": "",
             "language": "en",
         };
-        var sourceImageUrl = "https://vignette.wikia.nocookie.net/avatar/images/a/ae/Aang_at_Jasmine_Dragon.png/revision/latest?cb=20130612174003";
+        var sourceImageUrl = "https://subzikstorage.blob.core.windows.net/sub1pict/51oig+oxn+l._sy355_.jpg";
         document.querySelector("#sourceImage").src = sourceImageUrl;
  
         $.ajax({
