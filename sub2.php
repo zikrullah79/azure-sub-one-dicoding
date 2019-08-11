@@ -95,7 +95,7 @@ if (isset($_POST["upload"]) && isset($_FILES["browse"])) {
                     foreach ($result->getBlobs() as $blob)
                     {
                         echo "<tr><td>".$blob->getName()."</td><td>
-                        <input name='submit' type ='submit' value='analyze'></input><input type='hidden' name='img' value = '<?php echo ".$blob->getUrl()."?>'/></td></tr>";
+                        <input name='submit' type ='submit' value='analyze'></input><input type='hidden' name='img' value = '".$blob->getUrl()."'/></td></tr>";
                     }
                 
                     $listBlobsOptions->setContinuationToken($result->getContinuationToken());
