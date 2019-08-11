@@ -28,6 +28,7 @@ Image to analyze:
 </div>
 <?php 
 if(isset($_POST["img"])){
+    $img  = $_POST["img"];
     ?>
     <script>
         var subscriptionKey = "0c67ef2ccfa046f09be290c83d89c6f7";
@@ -39,7 +40,7 @@ if(isset($_POST["img"])){
             "details": "",
             "language": "en",
         };
-        var sourceImageUrl = "https://subzikstorage.blob.core.windows.net/sub1pict/2017-retro-neptune-poseidon-trident-tombak-ukraina-yunani-kalung-trishul-simbol-kalung-untuk-pria-sweater-aksesoris.jpg";
+        var sourceImageUrl = "<?php echo $img ?>";
         document.querySelector("#sourceImage").src = sourceImageUrl;
  
         $.ajax({
