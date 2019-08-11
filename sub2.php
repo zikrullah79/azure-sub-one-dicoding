@@ -81,7 +81,6 @@ if (isset($_POST["upload"]) && isset($_FILES["browse"])) {
             </div>
         </div>
     </form>
-    <form  method="POST" action="analyze.php">
         <table class="table table-condensed">
             <thead>
                 <tr>
@@ -94,7 +93,8 @@ if (isset($_POST["upload"]) && isset($_FILES["browse"])) {
                 do{
                     foreach ($result->getBlobs() as $blob)
                     {
-                        echo "<tr><td>".$blob->getName()."</td><td><input name='submit' type ='submit' value='analyze'></input><input type='hidden' name='img' value = '".$blob->getUrl()."'/></td></tr>";
+                        echo "<tr><td>".$blob->getName()."</td><td>
+                        <form  method='POST' action='analyze.php'><input name='submit' type ='submit' value='analyze'></input><input type='hidden' name='img' value = '".$blob->getUrl()."'/></form></td></tr>";
                     }
                 
                     $listBlobsOptions->setContinuationToken($result->getContinuationToken());
@@ -102,7 +102,6 @@ if (isset($_POST["upload"]) && isset($_FILES["browse"])) {
             ?>
             </tbody>
         </table>
-    </form>
  </div>
  </body>
 </html>
