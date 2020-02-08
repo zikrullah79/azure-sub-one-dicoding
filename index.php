@@ -26,10 +26,10 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "sub1-zik-database.database.windows.net";
-    $user = "zikrullah79";
-    $pass = "Ryufar79";
-    $db = "sub1-zikdb";
+    $host = "";
+    $user = "";
+    $pass = "";
+    $db = "";
 
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);

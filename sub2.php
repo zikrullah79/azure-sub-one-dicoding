@@ -8,7 +8,7 @@ use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
 use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
-$connectionString = "DefaultEndpointsProtocol=https;AccountName=subzikstorage;AccountKey=ekPoRJ4XJ9v/47j+i0IIiRNDHINTzqukS1tNw8oibcbk/Rtr5r8YK3WyyaE+M2CqcwXAUqF19j4o6SbGc8wIhw==";
+$connectionString = "";
 
 $containerName = "sub1pict";
 // Create blob client.
